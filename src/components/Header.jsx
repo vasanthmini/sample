@@ -29,6 +29,7 @@ import vitradesk from "../assets/vitradesk.png";
  import swift1 from "../assets/swift1 (1).jpeg";
   
 import "../Header.css";
+import Popover from "./Popover";
 
 function Header() {
   const [MenuOpen, setMenuOpen] = useState(false);
@@ -86,6 +87,9 @@ function Header() {
     slides.push(cars.slice(i, i + 4));
   }
 
+const [hoverItem, setHoverItem] = useState("");
+
+
   return (
     <>
       <div className="nav-container">
@@ -102,13 +106,24 @@ function Header() {
           {/* Navigation Links */}
           <div className={`navs ${MenuOpen ? "active" : ""}`}>
             <ul>
-              <li>
+              <li
+                onMouseEnter={() => setHoverItem("home")}
+                onMouseLeave={() => setHoverItem("")}
+              >
                 <Link to="/" className="links">
                   Home
                 </Link>
+                {hoverItem === "home" && <Popover />}
               </li>{" "}
               <li>Corporate</li>
               <li>Sales</li>
+              <li>
+                {" "}
+                <Link to="/MarutiService" className="links">
+                  {" "}
+                  Service
+                </Link>
+              </li>
               <li>More from us</li>
               <li>
                 {" "}

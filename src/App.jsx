@@ -12,6 +12,8 @@ import BreezeCar from "./components/BreezeCar";
 import BreezePage from "./components/BreezePage";
 import ImportantCustomerInfo from "./components/ImporantCustomerInfo";
 import MdsPage from "./components/MdsPage";
+import Popover from "./components/Popover";
+import MarutiService from "./components/MarutiService";
 function App() {
   return (
     <Router>
@@ -33,6 +35,8 @@ function App() {
         <Route path="/BreezeCar" element={<BreezeCar />} />
         <Route path="/BreezePage" element={<BreezePage />} />
         <Route path="/MdsPage" element={<MdsPage />} />
+        <Route path="/Popover" element={<Popover />} />
+        <Route path="/MarutiService" element={<MarutiService />} />
       </Routes>
     </Router>
   );

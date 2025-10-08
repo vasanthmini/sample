@@ -1,0 +1,171 @@
+/* General Layout */
+.maruti-service {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  overflow-x: hidden;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* 🔹 Fixed Header */
+.service-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #e60012, #b8000f);
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.service-header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.service-header p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+}
+
+/* 🔹 Scrollable Main Content */
+.service-content {
+  margin-top: 110px; /* space for fixed header */
+}
+
+/* 🔹 Carousel */
+.carousel-wrapper {
+  width: 100%;
+  max-height: 450px;
+  overflow: hidden;
+}
+.carousel-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  filter: brightness(95%);
+  transition: transform 0.6s ease-in-out;
+}
+.carousel-img:hover {
+  transform: scale(1.02);
+}
+
+/* 🔹 Sections */
+.service-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+.service-section h2 {
+  color: #e60012;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.service-section p {
+  font-size: 1rem;
+}
+
+/* 🔹 Form */
+.service-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 90%;
+  max-width: 320px;
+  margin: 25px auto;
+}
+.service-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.service-form button {
+  padding: 12px;
+  background: #e60012;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.service-form button:hover {
+  background: #c0000f;
+}
+
+/* 🔹 Lists */
+.cost-list,
+.choose-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+.cost-list li,
+.choose-list li {
+  padding: 8px 0;
+  font-size: 1.1rem;
+}
+.note {
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* 🔹 Footer */
+.service-footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 0.95rem;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 300px;
+  }
+
+  .service-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .service-header p {
+    font-size: 0.85rem;
+  }
+
+  .service-section {
+    padding: 40px 15px;
+  }
+
+  .service-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-img {
+    height: 220px;
+  }
+
+  .service-header {
+    padding: 15px 5px;
+  }
+
+  .service-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .service-header p {
+    font-size: 0.8rem;
+  }
+
+  .service-form {
+    width: 100%;
+  }
+}
