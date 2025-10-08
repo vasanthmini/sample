@@ -1,0 +1,88 @@
+.about-container {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  padding-bottom: 40px;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #111, #333);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  color: #f8c10e;
+}
+
+/* Intro */
+.about-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.about-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+/* Mission & Vision */
+.about-mission {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-mission .card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Why Choose Us */
+.about-why {
+  padding: 40px 20px;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.about-why h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.why-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.why-item .icon {
+  font-size: 2rem;
+  color: #f8c10e;
+  margin-bottom: 10px;
+}

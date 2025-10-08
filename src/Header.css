@@ -1,0 +1,471 @@
+/* ---------------- NAVBAR ---------------- */
+.nav-container {
+  width: 100%;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-con {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  flex-wrap: wrap;
+}
+
+.logos {
+  height: 80px;
+
+  width: auto;
+}
+
+.navs {
+  display: flex;
+}
+
+.navs ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+}
+
+.navs ul li {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.4s;
+}
+
+.navs ul li:hover {
+  color: #007bff;
+}
+
+.contact-text {
+  font-size: 1rem;
+  color: #007bff;
+  cursor: pointer;
+  margin: 0;
+}
+
+.contact-icon {
+  display: none;
+  font-size: 1.3rem;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.links{
+  text-decoration: none;
+  color: #111;
+  list-style: none;
+}
+/* Hamburger Menu */
+.hamburger-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ---------------- CAROUSEL ---------------- */
+.d-block {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border: #111 1px solid;
+}
+
+/* ---------------- MODELS ---------------- */
+.Models {
+  padding: 50px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 40px;
+}
+
+.card-wrapper {
+  position: relative;
+width: 300px;
+  height: 650px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border: 1px solid #1d1b1b;
+  margin: 0 auto;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 120px;
+  left: -100%; /* Hidden initially */
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #111;
+  /* background: rgba(165, 164, 164, 0.85); */
+  transition: left 0.3s ease;
+}
+
+.card-wrapper:hover {
+  width: 500px; /* expand width */
+}
+
+.card-wrapper:hover .card-img {
+  transform: scale(1);
+}
+
+.card-wrapper:hover .card-info {
+  left: 0;
+}
+
+.explore-btn {
+  width: 130px;
+  margin-top: 20px;
+  padding: 10px 10px;
+  background-color: #eef1f5;
+  border: none;
+  color: #1f1d1d;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.explore-btn:hover {
+  background-color: rgb(34, 34, 33);
+  color: #eef1f5;
+  font-weight: 500;
+  transform: scale(1.1);
+}
+.explore-btn:active {
+  transform: scale(0.95);
+}
+
+
+.more{
+    padding: 0px 20px;
+    
+}
+.more-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.line {
+  margin-top: 20px;
+  padding-top: 30px;
+  width:220px;
+  background-color: #eef1f5;
+  border: 1px solid rgb(172, 168, 168);
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.line-con {
+  padding-left: 30px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(189, 185, 185);
+}
+
+.move {
+  padding-top: 20px;
+}
+
+/* Base line styling */
+.line2, .line2-1, .line2-2, .line2-3, .line2-4 {
+  padding: 20px 30px 60px;
+  position: relative;
+  background: linear-gradient(to top, #ccc 0%, transparent 100%);
+  background-size: 100% 0%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: background-size 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+/* Specific hover colors for each block */
+.line2:hover {
+  background: linear-gradient(to top, rgb(79, 173, 79) 0%, transparent 100%);
+  background-size: 100% 100%;
+}
+
+.line2-1:hover {
+  background: linear-gradient(to top, rgb(224, 5, 5) 0%, transparent 100%);
+  background-size: 100% 100%;
+}
+
+.line2-2:hover {
+  background: linear-gradient(to top, orange 0%, transparent 100%);
+  background-size: 100% 100%;
+}
+
+.line2-3:hover {
+  background: linear-gradient(to top, skyblue 0%, transparent 100%);
+  background-size: 100% 100%;
+}
+
+.line2-4:hover {
+  background: linear-gradient(to top, rgb(180, 109, 120) 0%, transparent 100%);
+  background-size: 100% 100%;
+}
+
+.line2-con {
+  padding-bottom: 22px;
+}
+
+/* Arrow styling */
+.arrow { 
+  display: inline-block;
+  font-size: 58px;     
+  color: #007bff;  
+  transform: rotate(45deg) scale(1.2);
+  transition: transform 0.5s ease, color 0.3s ease;
+}
+
+.Arena{
+  background-color: #007bff;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+.car-carousel-container {
+  margin-top: 30px;
+}
+
+.car-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.reach-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.reach-us-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+.reach-us-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 1 1 300px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.contact-info h4 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1 1 300px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.contact-form h4 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.contact-form form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.contact-form form button:hover {
+  background-color: #0056b3;
+}
+
+/* Map */
+.map-container {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.footer-bottom {
+  display: flex;
+  text-align: center;
+  background-color: #1d1b1b;
+  color: #e0d9d9;
+  margin: auto;
+}
+
+
+
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .car-slide {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .more-main {
+    grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .card-wrapper {
+    width: 100%;
+    height: 280px;
+  }
+  .navs {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    gap: 20px;
+    background: #f8c7c7;
+    width: 220px;
+    /* height: 100vh; */
+    padding: 30px 20px;
+    box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    border-radius: 10px;
+  }
+  .logos{
+    display: hidden;
+  }
+  .navs ul{
+    display: inline;
+  }
+  .navs li{
+    padding-top: 15px;
+  }
+  .navs.active {
+    right: 0;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .contact-text {
+    display: none;
+  }
+
+  .contact-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .more-main {
+    grid-template-columns: 1fr 1fr;  /* 2 per row */
+  }
+.car-slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .arrow {
+    font-size: 40px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 576px) {
+  .logos {
+    height: 60px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+   .more-main {
+    grid-template-columns: 1fr;
+  }
+  .line {
+    width: 100%;
+  }
+  .arrow {
+    font-size: 48px; 
+  }
+
+  .card-wrapper {
+    max-width: 100%;
+    height: 320px;
+  }
+
+  .card-img {
+    height: 200px;
+  }
+
+  .card-info {
+    bottom: 20px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .explore-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

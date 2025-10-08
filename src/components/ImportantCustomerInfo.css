@@ -1,0 +1,63 @@
+.customer-info-page {
+  font-family: Arial, sans-serif;
+  color: #1a1a1a;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #002f6c;
+  padding-bottom: 10px;
+}
+
+.header h1 {
+  color: #002f6c;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.contact-section, .recalls-section, .actions-section {
+  margin: 25px 0;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+.recalls-section ul {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.actions-section button {
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #002f6c;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.actions-section button:hover {
+  background-color: #00a8e1;
+}
+Link{
+
+    text-decoration: none;
+}
+
+.footer {
+  border-top: 2px solid #002f6c;
+  margin-top: 30px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
