@@ -106,16 +106,17 @@ const [hoverItem, setHoverItem] = useState("");
           {/* Navigation Links */}
           <div className={`navs ${MenuOpen ? "active" : ""}`}>
             <ul>
-              <li
-                onMouseEnter={() => setHoverItem("home")}
-                onMouseLeave={() => setHoverItem("")}
-              >
+              <li>
                 <Link to="/" className="links">
                   Home
                 </Link>
-                {hoverItem === "home" && <Popover />}
               </li>{" "}
-              <li>Corporate</li>
+              <li
+                onMouseEnter={() => setHoverItem("Corporate")}
+                onMouseLeave={() => setHoverItem("")}
+              >
+                Corporate {hoverItem === "Corporate" && <Popover />}
+              </li>
               <li>Sales</li>
               <li>
                 {" "}
@@ -152,8 +153,8 @@ const [hoverItem, setHoverItem] = useState("");
           </a>
         </div>
       </div>
-      <div className="carousel">
-        <Carousel className="Carousels">
+      <div className="carousel1">
+        <Carousel className="Carousels1">
           {cars.map((car) => (
             <Carousel.Item key={car.id}>
               <img className="d-block w-100" src={car.img} alt="First slide" />
